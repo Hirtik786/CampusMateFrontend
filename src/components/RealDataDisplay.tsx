@@ -83,7 +83,7 @@ export function RealDataDisplay() {
     setIsSubmittingProject(true);
     
     try {
-      const response = await fetch('https://campusmatebackend-production.up.railway.app/projects', {
+      const response = await fetch('https://campusmatebackend-production-a8da.up.railway.app//projects', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

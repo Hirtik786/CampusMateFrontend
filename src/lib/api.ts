@@ -1,5 +1,5 @@
 // API service layer for CourseMate backend
-const API_BASE_URL = 'https://campusmatebackend-production.up.railway.app';
+const API_BASE_URL = 'https://campusmatebackend-production-a8da.up.railway.app/';
 
 // Generic API response type
 export interface ApiResponse<T> {

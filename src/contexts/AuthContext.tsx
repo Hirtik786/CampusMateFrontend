@@ -51,7 +51,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     try {
       console.log('Login attempt:', { email });
       
-      const response = await fetch('https://campusmatebackend-production.up.railway.app/auth/login', {
+      const response = await fetch('https://campusmatebackend-production-a8da.up.railway.app//auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

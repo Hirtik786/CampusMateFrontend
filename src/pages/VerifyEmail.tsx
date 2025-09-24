@@ -11,7 +11,7 @@ const VerifyEmail: React.FC = () => {
 
     useEffect(() => {
         if (token) {
-            fetch(`https://campusmatebackend-production.up.railway.app/auth/verify?token=${token}`)
+            fetch(`https://campusmatebackend-production-a8da.up.railway.app//auth/verify?token=${token}`)
                 .then(async (res) => {
                     const data = await res.json();
                     if (res.ok) {

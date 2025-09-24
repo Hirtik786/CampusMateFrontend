@@ -63,7 +63,7 @@ export function CourseMaterialsModal({ isOpen, onClose, course }: CourseMaterial
     
     setLoading(true);
     try {
-      const API_URL = import.meta.env.VITE_API_URL || 'https://campusmatebackend-production.up.railway.app';
+      const API_URL = import.meta.env.VITE_API_URL || 'https://campusmatebackend-production-a8da.up.railway.app/';
       const response = await fetch(`${API_URL}/courses/${course.id}/materials`);
       if (response.ok) {
         const data = await response.json();
@@ -102,7 +102,7 @@ export function CourseMaterialsModal({ isOpen, onClose, course }: CourseMaterial
     setIsSubmitting(true);
     
     try {
-      const API_URL = import.meta.env.VITE_API_URL || 'https://campusmatebackend-production.up.railway.app';
+      const API_URL = import.meta.env.VITE_API_URL || 'https://campusmatebackend-production-a8da.up.railway.app/';
       
       // For text materials, send as JSON
       const materialData = {
@@ -154,7 +154,7 @@ export function CourseMaterialsModal({ isOpen, onClose, course }: CourseMaterial
     if (!confirm('Are you sure you want to delete this material?')) return;
     
     try {
-      const API_URL = import.meta.env.VITE_API_URL || 'https://campusmatebackend-production.up.railway.app';
+      const API_URL = import.meta.env.VITE_API_URL || 'https://campusmatebackend-production-a8da.up.railway.app/';
       const response = await fetch(`${API_URL}/courses/${course?.id}/materials/${materialId}`, {
         method: 'DELETE',
       });

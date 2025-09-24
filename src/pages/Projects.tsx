@@ -46,7 +46,7 @@ const Projects = () => {
   const [showMyRequestsModal, setShowMyRequestsModal] = useState(false);
   const [selectedProjectId, setSelectedProjectId] = useState<string | null>(null);
 
-  const API_URL = import.meta.env.VITE_API_URL || 'https://campusmatebackend-production.up.railway.app';
+  const API_URL = import.meta.env.VITE_API_URL || 'https://campusmatebackend-production-a8da.up.railway.app/';
 
   useEffect(() => {
     fetchProjects();
@@ -514,7 +514,7 @@ const CreateProjectForm = ({ onClose, onProjectCreated }: { onClose: () => void;
   const [newSkill, setNewSkill] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const API_URL = import.meta.env.VITE_API_URL || 'https://campusmatebackend-production.up.railway.app';
+  const API_URL = import.meta.env.VITE_API_URL || 'https://campusmatebackend-production-a8da.up.railway.app/';
 
   const categories = [
     'Web Development',

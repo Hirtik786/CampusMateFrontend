@@ -57,7 +57,7 @@ export function ApiDemo() {
       <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
         <h2 className="text-xl font-semibold text-green-800 mb-2">✅ Backend Connected</h2>
         <p className="text-green-700">
-          Your Spring Boot backend is running at <code className="bg-green-100 px-2 py-1 rounded">https://campusmatebackend-production.up.railway.app</code>
+          Your Spring Boot backend is running at <code className="bg-green-100 px-2 py-1 rounded">https://campusmatebackend-production-a8da.up.railway.app/</code>
         </p>
       </div>
 

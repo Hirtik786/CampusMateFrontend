@@ -48,7 +48,7 @@ const Courses = () => {
   const [showMaterialsModal, setShowMaterialsModal] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
 
-  const API_URL = import.meta.env.VITE_API_URL || 'https://campusmatebackend-production.up.railway.app';
+  const API_URL = import.meta.env.VITE_API_URL || 'https://campusmatebackend-production-a8da.up.railway.app/';
 
   useEffect(() => {
     fetchCourses();

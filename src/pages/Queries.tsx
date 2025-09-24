@@ -42,7 +42,7 @@ const Queries = () => {
   const [showQuestionDetail, setShowQuestionDetail] = useState(false);
   const [selectedQuestion, setSelectedQuestion] = useState<Query | null>(null);
 
-  const API_URL = import.meta.env.VITE_API_URL || 'https://campusmatebackend-production.up.railway.app';
+  const API_URL = import.meta.env.VITE_API_URL || 'https://campusmatebackend-production-a8da.up.railway.app/';
 
   useEffect(() => {
     fetchQueries();
